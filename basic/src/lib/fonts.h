@@ -12,6 +12,6 @@ typedef struct {
 
 
 extern FontDef Font_16x26;
-extern const uint8_t plaao_logo[25608];
+extern const uint8_t arducam_logo[25608];
 
 #endif // __FONTS_H__

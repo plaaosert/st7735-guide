@@ -3,7 +3,6 @@ add_executable(strings
         lib/fonts.c
         lib/st7735.c
         lib/DEV_Config.c
-	lib/ICM20948.c
         )
 
 # pull in common dependencies
