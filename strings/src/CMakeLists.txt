@@ -1,4 +1,4 @@
-add_executable(basic
+add_executable(strings
         main.c
         lib/fonts.c
         lib/st7735.c
@@ -8,7 +8,7 @@ add_executable(basic
 
 # pull in common dependencies
 target_link_libraries(
-  basic
+  strings
   hardware_pwm
   hardware_pio
   hardware_spi
@@ -16,11 +16,11 @@ target_link_libraries(
   pico_stdlib
 )
 
-pico_enable_stdio_usb(basic 1)
-pico_enable_stdio_uart(basic 0)
+pico_enable_stdio_usb(strings 1)
+pico_enable_stdio_uart(strings 0)
 
 # create map/bin/hex file etc.
-pico_add_extra_outputs(basic)
+pico_add_extra_outputs(strings)
 
 # add url via pico_set_program_url
-example_auto_set_url(basic)
+example_auto_set_url(strings)
